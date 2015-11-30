@@ -13,7 +13,7 @@
 	}
 	
 	// include the page called 
-	if ( isset($_GET['page']) && file_exists('pages/' . $_GET['page'] . '.php') ) {
+	if ( isset($_GET['page']) && file_exists('pages/' . $_GET['page'] . '.php') && in_array($_GET['page'], $navLinks) ) {
     	include_once('pages/' . $_GET['page'] . '.php');
 	} else {
     	include_once('pages/home.php');
