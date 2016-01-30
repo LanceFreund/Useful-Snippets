@@ -1,0 +1,34 @@
+<!doctype html>
+
+<!-- 
+    init code by jade allen cook
+    0/00 - v1.0 complete
+
+    js/data.js - customize theme here
+    js/controllers.js - add js to pages
+    js/routes.js - create new links
+-->
+
+<html ng-app="app">
+    <head>
+        <title></title>
+        <!-- css -->
+        <link href="css/normalize.css" type="text/css" rel="stylesheet" />
+        <link href="css/style.css" type="text/css" rel="stylesheet" />
+        <!-- js -->
+        <script src="js/angular.min.js"></script>
+        <script src="js/angular-route.min.js"></script>
+        <script src="js/jquery.min.js"></script>
+    </head>
+    
+    <body>
+        <div id="app" ng-view></div>
+    </body>
+    
+    <footer>
+        <!-- js -->
+        <script src="js/data.js"></script>
+        <script src="js/routes.js"></script>
+        <script src="js/controllers.js"></script>
+    </footer>
+</html>
